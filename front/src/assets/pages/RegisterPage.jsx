@@ -38,7 +38,7 @@ export const RegisterPage = () => {
                 handleReset();
                 navigate('/login');
             } else {
-                // Manejo de errores HTTP 400 (express-validator) u otros mensajes
+                
                 if (Array.isArray(data.errors)) {
                     setErrorMsgs(data.errors.map(err => err.msg));
                 } else if (data.msg) {
